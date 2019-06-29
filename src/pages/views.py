@@ -7,8 +7,7 @@ def home_view(request, *args, **kwargs):
 
 
 def contact_view(request, *args, **kwargs):
-    print(request)
-    return HttpResponse(f'<h1>Contact page</h1>')
+    return render(request, 'contact.html', {})
 
 
 def injected_view(request, *args, **kwargs):

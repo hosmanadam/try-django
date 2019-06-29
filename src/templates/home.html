@@ -1,2 +1,6 @@
-<h1>Hello {{ request.user }}!</h1>
-<p>This is a Django template.</p>
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Hello {{ request.user }}!</h1>
+    <p>This is a Django template.</p>
+{% endblock %}
