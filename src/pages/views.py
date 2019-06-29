@@ -3,11 +3,11 @@ from django.shortcuts import render
 
 
 def home_view(request, *args, **kwargs):
-    print(request)
-    return HttpResponse(f'<h1>Home page</h1>')
+    return render(request, 'home.html', {})
 
 
 def contact_view(request, *args, **kwargs):
+    print(request)
     return HttpResponse(f'<h1>Contact page</h1>')
 
 
