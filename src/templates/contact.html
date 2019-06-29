@@ -2,5 +2,17 @@
 
 {% block content %}
     <h1>Dear {{ request.user }}!</h1>
-    <p>My contact info is a secret, sorry about that.</p>
+    <p>My contact info is as follows:</p>
+        <ul>
+            <li>Phone: {{ phone }}</li>
+            <li>Email: {{ email }}</li>
+            <li>Address: {{ address }}</li>
+        </ul>
+    <p>Also, some other stuff:</p>
+        <ul>
+            {% for item in stuff %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+
 {% endblock %}
