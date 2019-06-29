@@ -11,7 +11,7 @@
     <p>Also, some other stuff:</p>
         <ul>
             {% for item in stuff %}
-                <li>{{ item }}</li>
+                <li>{{ forloop.counter }}: {{ item|add:22 }}</li>
             {% endfor %}
         </ul>
 

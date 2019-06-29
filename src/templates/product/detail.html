@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Item</h1>
+<ul>
+    <li>Title: {{ obj.title }}</li>
+    <li>Description: {{ obj.description }}</li>
+    <li>Price: {{ obj.price }}</li>
+    <li>Summary: {{ obj.summary }}</li>
+    <li>Featured: {{ obj.featured }}</li>
+</ul>
+{% endblock %}
